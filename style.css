@@ -73,7 +73,7 @@ li{
     background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40%;
+    background-position: 25% center;
     background-attachment: fixed;
     padding-top: 0.5em;
     position: relative;
