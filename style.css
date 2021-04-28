@@ -72,8 +72,8 @@ li{
     height: 100vh;
     background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/main.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 25% center;
+    background-size: auto;
+    background-position: 30% 100%;
     background-attachment: fixed;
     padding-top: 0.5em;
     position: relative;
@@ -1015,6 +1015,7 @@ main{
         font-size: 1.1rem;
     }
     .heading-container{
+        background-size: cover;
         background-position: center;
     }
     .button-container{
