@@ -142,7 +142,7 @@ timeplanTwo.addEventListener("click", ()=>{
 timeplanThree.addEventListener("click", ()=>{
     timeplanThree.classList.toggle('active');
     timeplanTwo.classList.remove('active');
-    timeplanThree.classList.remove('active');
+    timeplanOne.classList.remove('active');
 });
 
 
