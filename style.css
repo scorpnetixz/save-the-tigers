@@ -27,6 +27,13 @@ a{
 li{
     list-style: none;
 }
+input:not(input[type="checkbox"]){
+    -webkit-appearance: none;
+    border: none;
+}
+
+/* code for disclaimer starts here*/
+
 .modal-container{
     position: fixed;
     z-index: 1;
@@ -67,6 +74,11 @@ li{
     padding: 1.5em 1em;
     margin: 0;
 }
+
+/* disclaimer codes ends here */
+
+/* heading code start here  */
+
 .heading-container{
     width: 100vw;
     height: 100vh;
@@ -221,7 +233,7 @@ main{
     text-align: center;
 }
 main{
-    margin-top: 3.25em;
+    margin-top: 2em;
 }
 .header h1{
     font-size: 2.5rem;
@@ -263,7 +275,7 @@ main{
 .button-container{
     position: absolute;
     width: 80%;
-    bottom: 5.25em;
+    bottom: 2em;
 }
 
 .btn{
@@ -318,6 +330,11 @@ main{
 .social-icons .fab:last-child{
     font-size: 1.8rem;
 }
+
+/* heading code ends here  */
+
+/* 1st content's code starts here */
+
 .content-1{
     width: 100%;
     height: auto;
@@ -332,7 +349,6 @@ main{
     width: 80%;
     margin: 0 auto;
     text-align: center;
-
 }
 .content-container-1 h1{
     font-size: 1.35rem;
@@ -340,7 +356,6 @@ main{
     margin: 0;
     text-transform: uppercase;
     position: relative;
-    width: 100%;
     overflow: hidden;
 }
 
@@ -363,13 +378,18 @@ main{
 
 
 .content-container-1 p{
-    font-size: 0.55rem; 
-    letter-spacing: 0.13em;
+    font-size: 0.8rem; 
+    letter-spacing: 0.02em;
     font-weight: lighter;
     line-height: 1.6;
     margin: 3.27em 0;
     text-align: justify;
 }
+
+/* first content's code ends here */
+
+/* second content's code starts here */
+
 .content-2{
     width: 100%;
     text-align: center;
@@ -398,6 +418,7 @@ main{
     overflow: hidden;
     top: 50%;
 }
+
 .content-container-2 h1::before{
     margin-left: -51%;
 }
@@ -542,14 +563,19 @@ main{
     background-color: rgba(0, 0, 0, 0.8);
 }
 .content-container-2 p{
-    font-size: 0.55rem; 
-    letter-spacing: 0.08em;
+    font-size: 0.8rem; 
+    letter-spacing: 0.02em;
     font-weight: lighter;
     line-height: 1.6;
     margin: 0;
     margin-top: 3.27em;
     text-align: justify;
 }
+
+/* second content's code ends here */
+
+/* images grid gallery's code starts here */
+
 .gallery{
     width: 100%;
     text-align: center;
@@ -626,6 +652,11 @@ main{
 .image-container .image-holder + .image-holder{
     margin-top: 1.41em;
 }
+
+/* images grid gallery's code starts here */
+
+/* donation section's code starts here */
+
 .donation{
     width: 100%;
     text-align: center;
@@ -665,6 +696,16 @@ main{
     border: 1px solid rgb(0, 0, 0);
     border-bottom-color: transparent;
     cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.timeplan.one.active{
+    background: hsla(202, 98%, 50%, 1);
+}
+.timeplan.two.active{
+    background: hsla(202, 98%, 50%, 1);
+}
+.timeplan.three.active{
+    background: hsla(202, 98%, 50%, 1);
 }
 .timeplan:hover{
     background: hsla(202, 98%, 50%, 1);
@@ -703,7 +744,7 @@ main{
 .btn.card{
     color: var(--font-color);
     width: 80%;
-    font-size: 2.12rem;
+    font-size: 1.8rem;
     font-weight: bold;
     padding: 0.3em 1.2em;
     margin: 0.76em 0;
@@ -733,6 +774,9 @@ main{
 }
 .checkbox{
     margin: 0;
+    width: 0.85em;
+    height: 0.85em;
+    border: 1px solid rgb(0, 0, 0);
 }
 .verify.btn{
     margin-top: 1.392em;
@@ -760,6 +804,11 @@ main{
 .donate.btn:hover{
     background: none;
 }
+
+/* donation section's code ends here */
+
+/* volunteer registration form's code starts here */
+
 .volunteer-form{
     width: 100%;
     text-align: center;
@@ -808,6 +857,7 @@ main{
 .submit.btn{
     padding: 0.75em 0;
     background-color: var(--font-theme-color);
+    border: 1px solid var(--font-theme-color);
     color: var(--font-color);
     font-weight: bold;
     cursor: pointer;
@@ -820,6 +870,11 @@ main{
 .volunteer-form-container form > * + *{
     margin-top: 1.42em;
 }
+
+/* volunteer registration form's code starts here */
+
+/* footer section's code starts herer */
+
 .footer{
     width: 100%;
     text-align: center;
@@ -837,6 +892,7 @@ main{
     width: 5.42rem;
     height: 4rem;
     margin-right: 2em;
+    flex: 2 1 10%;
 }
 
 .footer-container .logo > img{
@@ -844,6 +900,7 @@ main{
     height: 100%;
 }
 .footer-content{
+    flex: 2 1 90%;
     text-align: left;
 }
 .footer-content > * + *{
@@ -872,9 +929,20 @@ main{
 .footer-content a{
     display: block;
     color: var(--font-color);
+    transition: color 0.4s ease;
+    cursor: pointer;
 }
 .footer-content i{
     font-size: 2.12rem;
+    transition: color 0.3s ease;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.footer-content a:hover{
+    color: var(--font-theme-color);
+}
+.footer-content i:hover{
+    color: rgba(0, 0, 0, 1);
 }
 .footer-content .fa-linkedin{
     margin-left: 0.5em;
@@ -926,12 +994,19 @@ main{
     font-size: 2.5em;
     color: rgb(136, 134, 134);
 }
+
+/* footer section's code starts herer */
+
+
 @media screen and (max-width: 320px){
     .header h1{
         font-size: 2.2rem;
     }
     .header h4{
         font-size: 0.5rem;
+    }
+    .content-container-1 h1{
+        font-size: 1.25rem;
     }
     .footer-content .search{
         font-size: 0.8rem;
@@ -995,6 +1070,7 @@ main{
         font-size: 0.8rem;
     }
 }
+
 @media screen and (min-width: 1025px) {
     .modal-container .modal-holder{
         margin: 40vh auto;
@@ -1015,7 +1091,7 @@ main{
         font-size: 1.1rem;
     }
     .heading-container{
-        background-size: cover;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/main.jpg);
         background-position: center;
     }
     .button-container{
@@ -1083,6 +1159,12 @@ main{
     .time-container .timeplan:last-child{
         border-right-color: rgb(0, 0, 0);
     }
+    .donation-card{
+        height: 16em;
+    }
+    .btn.card{
+        font-size: 1rem;
+    }
     .custom-container .checkbox{
         margin-right: 1.5em;
     }
@@ -1149,20 +1231,17 @@ main{
     }
     .arrow-container{
         transform: rotate(45deg);
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
     }
     .arrow-container:hover{
         transform: rotate(0deg);
     }
+    .arrow-container i:hover{
+        color: hsla(202, 98%, 50%, 1);
+    }
     .footer-content .search{
         padding: 0 1em;
     }
-
-
-
-
-
-
 }
 
 

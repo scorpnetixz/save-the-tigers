@@ -120,3 +120,29 @@ window.addEventListener('click', ()=>{
     modalContainer.style.display = "none";
 });
 
+
+// timeplan background color
+
+let timeplanOne = document.querySelector('.timeplan.one');
+let timeplanTwo = document.querySelector('.timeplan.two');
+let timeplanThree = document.querySelector('.timeplan.three');
+
+timeplanOne.addEventListener("click", ()=>{
+    timeplanOne.classList.toggle('active');
+    timeplanTwo.classList.remove('active');
+    timeplanThree.classList.remove('active');
+});
+
+timeplanTwo.addEventListener("click", ()=>{
+    timeplanTwo.classList.toggle('active');
+    timeplanOne.classList.remove('active');
+    timeplanThree.classList.remove('active');
+});
+
+timeplanThree.addEventListener("click", ()=>{
+    timeplanThree.classList.toggle('active');
+    timeplanTwo.classList.remove('active');
+    timeplanThree.classList.remove('active');
+});
+
+
