@@ -30,6 +30,7 @@ li{
 input:not(input[type="checkbox"]){
     -webkit-appearance: none;
     border: none;
+    border-radius: 0;
 }
 
 /* code for disclaimer starts here*/
@@ -856,6 +857,7 @@ main{
 }
 .submit.btn{
     padding: 0.75em 0;
+    border-radius: 0;
     background-color: var(--font-theme-color);
     border: 1px solid var(--font-theme-color);
     color: var(--font-color);
