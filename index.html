@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">   
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="images/logo.png" sizes="40x40">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="128x128">
     <title>Save The Tigers</title>
 </head>
 <body>
@@ -34,27 +34,27 @@
                 <div class="nav-flex-items">
                     <ul class="nav-hidden-flex-list">
                         <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
-                        <li><a href="#"><i class="fas fa-photo-video"></i><span>Gallery</span></a></li>
-                        <li><a href="#"><i class="fas fa-hands-helping"></i><span>Volunteer</span></a></li>
-                        <li><a href="#"><i class="fas fa-phone-square-alt"></i><span>Contact</span></a></li>
+                        <li><a href="#gallery"><i class="fas fa-photo-video"></i><span>Gallery</span></a></li>
+                        <li><a href="#volunteer"><i class="fas fa-hands-helping"></i><span>Volunteer</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-phone-square-alt"></i><span>Contact</span></a></li>
                     </ul>
                 </div>
                 <div class="hamburger">
                     <div class="ham">
                         <div class="nav-items">
                             <ul class="nav-items-list">
-                                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                                <li><a href="#"><i class="fas fa-photo-video"></i></a></li>
-                                <li><a href="#"><i class="fas fa-hands-helping"></i></a></li>
-                                <li><a href="#"><i class="fas fa-phone-square-alt"></i></a></li>
+                                <li><a href="#" onClick="event.stopPropagation()"><i class="fas fa-home"></i></a></li>
+                                <li><a href="#gallery" onClick="event.stopPropagation()"><i class="fas fa-photo-video"></i></a></li>
+                                <li><a href="#volunteer" onClick="event.stopPropagation()"><i class="fas fa-hands-helping"></i></a></li>
+                                <li><a href="#contact" onClick="event.stopPropagation()"><i class="fas fa-phone-square-alt"></i></a></li>
                             </ul>
                         </div>
                         <div class="nav-hidden-items">
                             <ul class="nav-hidden-list">
                                 <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
-                                <li><a href="#"><i class="fas fa-photo-video"></i><span>Gallery</span></a></li>
-                                <li><a href="#"><i class="fas fa-hands-helping"></i><span>Volunteer</span></a></li>
-                                <li><a href="#"><i class="fas fa-phone-square-alt"></i><span>Contact</span></a></li>
+                                <li><a href="#gallery"><i class="fas fa-photo-video"></i><span>Gallery</span></a></li>
+                                <li><a href="#volunteer"><i class="fas fa-hands-helping"></i><span>Volunteer</span></a></li>
+                                <li><a href="#contact"><i class="fas fa-phone-square-alt"></i><span>Contact</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
 
         </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="gallery-container">
             <h1>Meet The Tigers</h1>
             <div class="image-container">
@@ -215,7 +215,7 @@
             </div>
         </div>
     </div>
-    <div class="volunteer-form">
+    <div class="volunteer-form" id="volunteer">
         <div class="volunteer-form-container">
             <h1>Become a volunteer</h1>
             <form action="">
@@ -239,7 +239,7 @@
                     <h4>8976 Random street, 
                         Somewhere under the sky.</h4>
                 </div>
-                <div class="footer-content-2">
+                <div class="footer-content-2" id="contact">
                     <h1>Stay Connected</h1>
                     <a href="">+974-123456789</a>
                     <a href="">+974-123456789</a>

@@ -5,7 +5,7 @@ let navHiddenList = document.querySelector('.nav-hidden-items');
 let navItemsList = document.querySelector('.nav-items');
 let navIHiddenList = document.querySelector('.nav-hidden-list');
 
-hamMenu.addEventListener('click', ()=>{
+hamMenu.addEventListener('click', (e)=>{
     navHiddenList.classList.toggle('active');
     navItemsList.classList.toggle('active');
     navIHiddenList.classList.toggle('active');
