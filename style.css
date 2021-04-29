@@ -853,7 +853,7 @@ main{
     padding: 0.34em 0 0.345em 0.85em;
     font-family: var(--font-main-style);
     font-size: 1rem;
-
+    border-radius: 0
 }
 .submit.btn{
     padding: 0.75em 0;
@@ -961,6 +961,7 @@ main{
 .footer-content input{
     padding: 0.40em 0;
     flex: 2;
+    margin: 0;
 }
 .footer-content .search{
     flex: 1;
@@ -969,6 +970,7 @@ main{
     background-color: var(--font-theme-color);
     border: 1px solid var(--font-theme-color);
     padding: 0.40em 0;
+    margin: 0;
 }
 .footer-bottom{
     width: 100%;
